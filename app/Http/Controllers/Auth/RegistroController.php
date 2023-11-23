@@ -31,10 +31,7 @@ class RegistroController extends Controller
       'password' => Hash::make($request->password),
     ]);
 
-    auth()->attempt([
-      'username' => $request->username,
-      'password' => $request->password
-    ]);
+
 
     return  redirect()->route('DashboardIndex');
   }

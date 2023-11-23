@@ -43,9 +43,9 @@ Route::delete('/productos/{productos}', [ProductosControlleR::class, 'destroy'])
 
 //REGISTRO
 
-Route::get('/cuenta', [RegistroController::class, 'index'])->name('registroIndex');
+Route::get('/cuenta', [RegistroController::class, 'index'])->name('registroIndex')->middleware('ruteProtect');
 
-Route::post('/cuenta', [RegistroController::class, 'store'])->name('registroStore');
+Route::post('/cuenta', [RegistroController::class, 'store'])->name('registroStore')->middleware('ruteProtect');
 
 
 
