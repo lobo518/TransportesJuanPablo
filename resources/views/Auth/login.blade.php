@@ -2,7 +2,7 @@
 
 @section('container')
 
-<div class="container w-50 mt-2">
+<div class="container w-50 mt-2 " style="background-color: rgba(255, 255, 255, 0.6); border:1px; border-style:solid; border-radius:4px">
   <h1 class="text-center">{{__('Login')}}</h1>
   <form action="{{ route('loginStore') }}" method="post">
     @csrf
