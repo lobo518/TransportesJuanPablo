@@ -23,7 +23,17 @@ Route::get('/', function () {
   return view('principal');
 });
 
+Route::get('/trayecto', function () {
+  return view('construccion');
+});
 
+Route::get('/galeria', function () {
+  return view('construccion');
+});
+
+Route::get('/contacto', function () {
+  return view('construccion');
+});
 
 
 Route::get('/productos', [ProductosControlleR::class, 'index'])->name('productosIndex');
